@@ -1,0 +1,45 @@
+\documentclass{article}
+\usepackage{hyperref}
+
+\title{Mobile App Architecture}
+\author{Mendoza Contreras Fabian}
+\date{09-01-2024}
+
+\begin{document}
+	
+	\maketitle
+	
+	The architecture in mobile apps is a combination of UI, data flow, and techniques used to ensure that everything within the ecosystem can interact without causing imbalances. Design patterns are closely linked to product quality and, above all, compatibility; therefore, best practices are crucial to guarantee good performance and stable functionality in applications.
+	
+	A common practice is to divide applications into various layers, each covering a different aspect of the application, protecting it from others but without disabling communication. These are regularly distinguished as: Presentation layer, business layer, and data layer. The first indicates how the app will be presented to the end user, the second is the logical business layer where data capture, validation, and modification occur, and finally, the data layer takes responsibility for ensuring the transfer and reception of data.
+	
+	\section*{Clean Architecture}
+	The Clean architecture is based on layers and inversion of code principles. It is composed of presentation, business, and data layers. Each layer is independent and exchanges data through interfaces.
+	\begin{itemize}
+		\item \textbf{UI Layer}
+		\begin{itemize}
+			\item UI elements
+			\item State holders
+		\end{itemize}
+		\item \textbf{Domain Layer (optional)}
+		\item \textbf{Data Layer}
+	\end{itemize}
+	
+	\section*{MVC Pattern}
+	MVC is a 3-tier architecture for mobile applications. It consists of the following layers:
+	\begin{itemize}
+		\item \textbf{Model:} Manages data, rules, and logic.
+		\item \textbf{View:} Presentation layer with user interface elements.
+		\item \textbf{Controller:} Establishes communication between the Model and View layers.
+	\end{itemize}
+	
+	\section*{MVVM Architecture}
+	The MVVM pattern, derived from MVC, includes three components: Model, View, and ViewModel. The ViewModel serves as the mediator, initiating changes in the Model and updating itself based on the updated Model. It includes data and user action binding between the View and the ViewModel.
+	
+	\section*{Bibliography}
+	\begin{itemize}
+		\item Neil T. (2014). \textit{Mobile Design Pattern Gallery: UI Patterns for Smartphone Apps. 2nd Edition.} O'Reilly Media.
+		\item Shah M. (2023). \textit{Mobile App Architecture: Everything You Need to Know.} Reviewed by January 8th, 2024 at: \url{https://radixweb.com/blog/guide-to-mobile-app-architecture}
+	\end{itemize}
+	
+\end{document}
